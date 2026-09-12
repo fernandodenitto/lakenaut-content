@@ -1,10 +1,11 @@
-<img src=".github/assets/mark.png" alt="" width="72" align="left" hspace="14" vspace="4">
+<div align="center">
+
+<img src=".github/assets/mark.png" alt="" width="88">
 
 # Lakenaut Content
 
-Databricks, one concept per file. An Obsidian vault that is also a website.
-
-<br clear="left">
+**Databricks, one concept per file.**<br>
+An Obsidian vault that is also a website.
 
 [![Site](https://img.shields.io/badge/read%20it-lakenaut.dev-e2590b?style=flat-square)](https://lakenaut.dev)
 [![Validate](https://img.shields.io/github/actions/workflow/status/fernandodenitto/lakenaut-content/validate.yml?branch=main&style=flat-square&label=validate)](https://github.com/fernandodenitto/lakenaut-content/actions/workflows/validate.yml)
@@ -12,10 +13,17 @@ Databricks, one concept per file. An Obsidian vault that is also a website.
 ![Paths](https://img.shields.io/badge/paths-8-e2590b?style=flat-square)
 ![Roadmaps](https://img.shields.io/badge/roadmaps-5-e2590b?style=flat-square)
 ![Obsidian](https://img.shields.io/badge/obsidian-ready-7c3aed?style=flat-square&logo=obsidian&logoColor=white)
+
 [![Content licence](https://img.shields.io/badge/content-CC%20BY--NC--SA%204.0-6E6862?style=flat-square)](LICENSE)
 [![Code licence](https://img.shields.io/badge/code-MIT-6E6862?style=flat-square)](LICENSE-CODE)
 ![Not affiliated](https://img.shields.io/badge/not%20affiliated%20with-Databricks-9C9590?style=flat-square)
 [![Discuss](https://img.shields.io/badge/discuss-r%2Flakenaut-ff4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/r/lakenaut/)
+
+**[Read it on the site](https://lakenaut.dev) · [Open it in Obsidian](#read-it-in-obsidian) · [Browse the index](INDEX.md) · [Feed an LLM](llms.txt)**
+
+</div>
+
+---
 
 This is theory, not a link farm: every concept is written out in full, in Databricks-specific terms, not generic SQL/Python tutorials with a Databricks label. The rule that keeps it coherent is simple — **one concept, one markdown file**. If an idea needs to show up somewhere else, it gets a wikilink, never a copy-paste.
 
@@ -29,9 +37,9 @@ This is the part that matters most: the `content/` folder is a real [Obsidian](h
 
 1. Clone the repo, or download it as a ZIP:
    ```bash
-   git clone https://github.com/fernandodenitto/lakemap-content.git
+   git clone https://github.com/fernandodenitto/lakenaut-content.git
    ```
-   [Download ZIP](https://github.com/fernandodenitto/lakemap-content/archive/refs/heads/main.zip)
+   [Download ZIP](https://github.com/fernandodenitto/lakenaut-content/archive/refs/heads/main.zip)
 2. Open Obsidian.
 3. Choose **Open folder as vault** and point it at the `content/` folder (not the repo root).
 
