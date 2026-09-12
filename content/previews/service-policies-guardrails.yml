@@ -1,0 +1,11 @@
+id: service-policies-guardrails
+name: Service policies for AI securables
+label: beta
+area: ai-gateway
+since: '2026'
+url: https://docs.databricks.com/aws/en/data-governance/unity-catalog/service-policies/
+summary: Policies evaluated when a model is called and when it answers, returning allow, deny or ask, with built-in safety
+  judges.
+why: The replacement for AI guardrails, and it fails closed by design.
+checked: '2026-09-11'
+concept: guardrails-and-service-policies

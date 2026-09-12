@@ -1,0 +1,10 @@
+id: genie-inspect
+name: Genie Inspect
+label: public-preview
+area: genie
+since: '2026'
+url: https://docs.databricks.com/aws/en/genie-agents/concepts
+summary: Inspecting how a Genie Agent reached an answer, step by step.
+why: The debugging surface for an agent that answers confidently and wrongly.
+concept: genie-agent-tuning
+checked: '2026-09-12'

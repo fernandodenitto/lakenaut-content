@@ -1,0 +1,12 @@
+id: multi-agent-supervisor-to-supervisor-agent
+current: Supervisor Agent
+trail:
+  - name: "Agent Bricks: Multi-Agent Supervisor"
+    until: "2026-02"
+  - name: Supervisor Agent
+    note: The Agent Bricks component that routes a request across several agents.
+changed: "2026-02"
+area: agents
+concepts: [agent-framework]
+exam_note: Recent enough that most written material still uses the longer name.
+source: https://docs.databricks.com/aws/en/release-notes/product/

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260" role="img" aria-labelledby="ttl">
+  <title id="ttl">Trigger, task DAG and run of a Lakeflow job</title>
+  <defs>
+    <marker id="h" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8a8f9a"/>
+    </marker>
+    <marker id="ha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#e2662a"/>
+    </marker>
+  </defs>
+  <style>
+    .box { fill:#8a8f9a; fill-opacity:.06; stroke:#8a8f9a; stroke-width:1.4 }
+    .box-a { fill:#e2662a; fill-opacity:.10; stroke:#e2662a; stroke-width:1.6 }
+    .zone { fill:none; stroke:#8a8f9a; stroke-width:1.2; stroke-dasharray:5 4; opacity:.75 }
+    .t  { font:600 13px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#8f959f }
+    .ta { font:600 13px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#e2662a }
+    .s  { font:400 11px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#82888f }
+    .lbl{ font:600 10px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#82888f; letter-spacing:.08em }
+    .m  { font:500 10.5px ui-monospace,SFMono-Regular,Menlo,monospace; fill:#82888f }
+    .ma { font:500 10.5px ui-monospace,SFMono-Regular,Menlo,monospace; fill:#e2662a }
+    .ar { fill:none; stroke:#8a8f9a; stroke-width:1.4; marker-end:url(#h) }
+    .ar-a { fill:none; stroke:#e2662a; stroke-width:1.6; marker-end:url(#ha) }
+    .ln { stroke:#8a8f9a; stroke-width:1.2; opacity:.6 }
+  </style>
+  <text x="20" y="30" class="lbl" text-anchor="start">TRIGGER</text>
+  <rect x="20" y="44" width="168" height="110" rx="9" class="box"/>
+  <text x="34" y="68" class="s" text-anchor="start">schedule (cron)</text>
+  <text x="34" y="86" class="s" text-anchor="start">file arrival</text>
+  <text x="34" y="104" class="s" text-anchor="start">table update</text>
+  <text x="34" y="122" class="s" text-anchor="start">continuous</text>
+  <text x="34" y="140" class="s" text-anchor="start">manual or API</text>
+  <path d="M188 99 L226 99" class="ar"/>
+  <text x="226" y="30" class="lbl" text-anchor="start">JOB&#160;&#160;·&#160;&#160;A DAG OF TASKS</text>
+  <rect x="226" y="44" width="480" height="200" rx="12" class="zone"/>
+  <rect x="246" y="62" width="134" height="52" rx="9" class="box"/>
+  <text x="258" y="86" class="t" text-anchor="start">ingest</text>
+  <text x="258" y="103" class="s" text-anchor="start">pipeline</text>
+  <rect x="246" y="132" width="134" height="52" rx="9" class="box"/>
+  <text x="258" y="156" class="t" text-anchor="start">load dims</text>
+  <text x="258" y="173" class="s" text-anchor="start">notebook</text>
+  <rect x="396" y="97" width="134" height="52" rx="9" class="box-a"/>
+  <text x="408" y="121" class="ta" text-anchor="start">join</text>
+  <text x="408" y="138" class="s" text-anchor="start">notebook</text>
+  <rect x="546" y="62" width="134" height="52" rx="9" class="box"/>
+  <text x="558" y="86" class="t" text-anchor="start">aggregate</text>
+  <text x="558" y="103" class="s" text-anchor="start">SQL</text>
+  <rect x="546" y="132" width="134" height="52" rx="9" class="box"/>
+  <text x="558" y="156" class="t" text-anchor="start">audit</text>
+  <text x="558" y="173" class="s" text-anchor="start">run_if: ALL_DONE</text>
+  <path d="M380 88 C388.0 88, 388.0 123, 396 123" class="ar"/>
+  <path d="M380 158 C388.0 158, 388.0 123, 396 123" class="ar"/>
+  <path d="M530 123 C538.0 123, 538.0 88, 546 88" class="ar"/>
+  <path d="M530 123 C538.0 123, 538.0 158, 546 158" class="ar"/>
+  <text x="246" y="232" class="m" text-anchor="start">depends_on sets the order &#160;·&#160; run_if decides whether a task starts</text>
+  <path d="M706 99 L744 99" class="ar"/>
+  <text x="744" y="30" class="lbl" text-anchor="start">RUN</text>
+  <rect x="744" y="44" width="136" height="110" rx="9" class="box"/>
+  <text x="758" y="68" class="s" text-anchor="start">one run_id</text>
+  <text x="758" y="86" class="s" text-anchor="start">state per task</text>
+  <text x="758" y="104" class="s" text-anchor="start">logs and output</text>
+  <text x="758" y="122" class="s" text-anchor="start">duration</text>
+  <text x="758" y="140" class="s" text-anchor="start">repair reruns</text>
+  <text x="20" y="196" class="lbl" text-anchor="start">COMPUTE</text>
+  <rect x="20" y="210" width="168" height="34" rx="9" class="box"/>
+  <text x="34" y="232" class="s" text-anchor="start">serverless, job cluster</text>
+</svg>

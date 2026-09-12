@@ -1,0 +1,16 @@
+id: databricks-one-to-genie-one
+current: Genie One
+trail:
+  - name: Databricks One
+    until: "2026-04"
+    note: The simplified workspace for business users, with no compute or notebooks in sight.
+  - name: Genie
+    until: "2026-06"
+    note: Briefly just "Genie", which collided with the Genie Agents name.
+  - name: Genie One
+    note: "Current name for the consumer entry point: dashboards, chat and apps in one place."
+changed: "2026-06-09"
+area: genie
+concepts: [genie-agents, dashboards-overview]
+exam_note: Two renames in three months, so material from early 2026 may use any of the three names.
+source: https://docs.databricks.com/aws/en/genie-one/

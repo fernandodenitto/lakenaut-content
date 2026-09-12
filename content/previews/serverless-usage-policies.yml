@@ -1,0 +1,9 @@
+id: serverless-usage-policies
+name: Serverless usage policies
+label: public-preview
+area: workspace
+since: '2026'
+url: https://docs.databricks.com/aws/en/admin/usage/budget-policies
+summary: Attribute serverless spend to a team or project by attaching a policy that tags the usage.
+why: Serverless usage is otherwise hard to attribute, which is how budgets get surprised.
+checked: '2026-09-11'

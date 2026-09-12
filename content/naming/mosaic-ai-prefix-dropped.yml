@@ -1,0 +1,13 @@
+id: mosaic-ai-prefix-dropped
+current: Model Serving, AI Search, Agent Bricks
+trail:
+  - name: Mosaic AI Model Serving, Mosaic AI Vector Search, Mosaic AI Agent Framework
+    until: "2026"
+    note: The Mosaic AI umbrella came from the MosaicML acquisition and covered the whole AI stack.
+  - name: Model Serving, AI Search, Agent Bricks
+    note: The Mosaic AI prefix has been dropped from the AWS documentation.
+changed: "2026"
+area: serving
+concepts: [model-serving-endpoints, vector-search-basics, agent-framework]
+exam_note: Every AI exam guide and most blog posts still write Mosaic AI in front of these names. They are the same products.
+source: https://docs.databricks.com/aws/en/machine-learning/model-serving/

@@ -1,0 +1,10 @@
+id: managed-mcp-servers
+name: Databricks-managed MCP servers
+label: public-preview
+area: agents
+since: '2026'
+url: https://docs.databricks.com/aws/en/agents/mcp-tools/managed-mcp
+summary: Ready-made Model Context Protocol servers for Genie, AI Search, SQL and Unity Catalog functions.
+why: The documented default way to give an agent tools, ahead of hand-written wrappers.
+checked: '2026-09-11'
+concept: mcp-on-databricks

@@ -1,0 +1,9 @@
+id: abac-deny-policies
+name: ABAC DENY policies
+label: beta
+area: catalog
+since: 2026-09
+url: https://docs.databricks.com/aws/en/data-governance/unity-catalog/abac/
+summary: Attribute-based policies that deny rather than grant, evaluated against governed tags.
+why: Deny rules change how you design a permission model, so worth watching closely.
+checked: '2026-09-11'

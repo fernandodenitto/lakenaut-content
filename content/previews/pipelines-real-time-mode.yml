@@ -1,0 +1,9 @@
+id: pipelines-real-time-mode
+name: Real-time mode in Lakeflow pipelines
+label: public-preview
+area: streaming
+since: 2026-05
+url: https://docs.databricks.com/aws/en/ldp/real-time
+summary: A trigger setting on a pipeline sink that pushes end-to-end latency down to milliseconds instead of micro-batches.
+why: It breaks the micro-batch assumption that sits under everything written about streaming so far.
+checked: '2026-09-11'

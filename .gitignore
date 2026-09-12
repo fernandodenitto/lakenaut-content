@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+content/.obsidian/workspace.json
+content/.obsidian/workspace-mobile.json
+content/.obsidian/cache
+content/.trash/

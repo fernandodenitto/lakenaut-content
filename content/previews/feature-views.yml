@@ -1,0 +1,10 @@
+id: feature-views
+name: Feature views
+label: public-preview
+area: features
+since: '2026'
+url: https://docs.databricks.com/aws/en/machine-learning/feature-store/feature-views
+summary: Declarative features with windowed aggregations, materialised on demand instead of hand-built tables.
+why: Databricks now points here first for new feature work.
+checked: '2026-09-11'
+concept: feature-views

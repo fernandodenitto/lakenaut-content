@@ -1,0 +1,11 @@
+id: dbr-15-4-lts
+name: Databricks Runtime 15.4 LTS
+kind: runtime
+status: ends
+date: '2027-08-19'
+area: compute
+summary: Long-term support ends.
+action: Still comfortable, but note it is the floor for several features, so upgrading unlocks as much as it costs.
+url: https://docs.databricks.com/aws/en/release-notes/runtime/databricks-runtime-ver
+concepts: []
+checked: '2026-09-11'

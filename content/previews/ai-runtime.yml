@@ -1,0 +1,9 @@
+id: ai-runtime
+name: AI Runtime
+label: public-preview
+area: experiments
+since: '2026'
+url: https://docs.databricks.com/aws/en/machine-learning/ai-runtime/
+summary: Serverless GPU compute with a distributed decorator for PyTorch, DeepSpeed and Ray workloads.
+why: The replacement for Foundation Model Fine-tuning, which has reached end of life.
+checked: '2026-09-11'

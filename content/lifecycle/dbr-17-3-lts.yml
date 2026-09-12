@@ -1,0 +1,11 @@
+id: dbr-17-3-lts
+name: Databricks Runtime 17.3 LTS
+kind: runtime
+status: ends
+date: '2028-10-22'
+area: compute
+summary: Long-term support ends.
+action: The safer target if the workload can take the newer behaviour.
+url: https://docs.databricks.com/aws/en/release-notes/runtime/databricks-runtime-ver
+concepts: []
+checked: '2026-09-11'

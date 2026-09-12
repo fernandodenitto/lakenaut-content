@@ -1,0 +1,10 @@
+id: zerobus-ingest
+name: Zerobus Ingest into default storage
+label: public-preview
+area: data-ingestion
+since: 2026-09
+url: https://docs.databricks.com/aws/en/ingestion/zerobus-ingest
+summary: Push records into a Unity Catalog table backed by default storage, with no external location and no message bus.
+why: Ingesting into streaming tables is already generally available; this removes the last piece of setup.
+checked: '2026-09-11'
+concept: zerobus-ingest

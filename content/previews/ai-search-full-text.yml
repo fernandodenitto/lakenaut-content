@@ -1,0 +1,10 @@
+id: ai-search-full-text
+name: Full-text search indexes in AI Search
+label: beta
+area: vector-search
+since: '2026'
+url: https://docs.databricks.com/aws/en/ai-search/ai-search
+summary: Indexes that need no embeddings at all, available on storage-optimized endpoints.
+why: The reason Vector Search was renamed AI Search.
+checked: '2026-09-11'
+concept: ai-search-indexes

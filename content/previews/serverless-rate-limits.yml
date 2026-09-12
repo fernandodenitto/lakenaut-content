@@ -1,0 +1,9 @@
+id: serverless-rate-limits
+name: Serverless compute rate limits
+label: private-preview
+area: compute
+since: '2026'
+url: https://docs.databricks.com/aws/en/compute/serverless/manage-serverless-compute
+summary: Caps on how much serverless compute an account or workspace can consume.
+why: The control that is missing when serverless spend runs away, and there is no cluster to stop.
+checked: '2026-09-11'

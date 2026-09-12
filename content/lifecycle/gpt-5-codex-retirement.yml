@@ -1,0 +1,11 @@
+id: gpt-5-codex-retirement
+name: GPT-5.1 Codex Max, Codex Mini and GPT-5.2 Codex
+kind: model
+status: ended
+date: '2026-07-16'
+area: serving
+summary: Three OpenAI coding models retired together in July 2026.
+action: GPT-5.5 replaces the Max and 5.2 variants, GPT-5.4 Codex Mini replaces the Mini.
+url: https://docs.databricks.com/aws/en/machine-learning/retired-models-policy
+concepts: []
+checked: '2026-09-11'

@@ -1,0 +1,11 @@
+id: dbr-18-lts
+name: Databricks Runtime 18 LTS
+kind: runtime
+status: ends
+date: '2029-06-10'
+area: compute
+summary: Long-term support ends. The longest runway currently published.
+action: Where a new project should start.
+url: https://docs.databricks.com/aws/en/release-notes/runtime/databricks-runtime-ver
+concepts: []
+checked: '2026-09-11'

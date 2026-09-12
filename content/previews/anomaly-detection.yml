@@ -1,0 +1,11 @@
+id: anomaly-detection
+name: Anomaly detection
+label: public-preview
+area: data-quality
+since: 2026-02
+url: https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/anomaly-detection/
+summary: Schema-level monitoring that learns freshness and completeness from history and flags tables that went quiet or arrived
+  thin.
+why: The only layer that catches an upstream job stopping, which no row-level rule can see.
+concept: data-quality-monitoring
+checked: '2026-09-12'

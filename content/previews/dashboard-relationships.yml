@@ -1,0 +1,10 @@
+id: dashboard-relationships
+name: Dashboard relationships
+label: public-preview
+area: dashboards
+summary: A join graph across AI/BI dashboard datasets, resolved at query time, with cross-dataset measures over several fact tables.
+why: The dynamic-grain counterpart to a metric view. Support for relationships in Unity Catalog is still in progress.
+since: "2026-09"
+url: https://docs.databricks.com/aws/en/dashboards/manage/data-modeling/dashboard-relationships
+concept: dashboard-data-modeling
+checked: 2026-09-11

@@ -1,0 +1,11 @@
+id: dbr-14-3-lts
+name: Databricks Runtime 14.3 LTS
+kind: runtime
+status: ends
+date: '2027-02-01'
+area: compute
+summary: Long-term support ends, so no more fixes and no more support tickets against it.
+action: Plan the jump to 16.4 LTS or later. Check the behaviour changes between them rather than assuming a clean swap.
+url: https://docs.databricks.com/aws/en/release-notes/runtime/databricks-runtime-ver
+concepts: []
+checked: '2026-09-11'

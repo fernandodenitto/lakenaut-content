@@ -1,0 +1,13 @@
+id: genie-spaces-to-genie-agents
+current: Genie Agents
+trail:
+  - name: Genie spaces
+    until: "2026-07"
+    note: A curated space where business users ask questions in natural language.
+  - name: Genie Agents
+    note: Renamed as the spaces became agents with tools and a knowledge layer.
+changed: "2026-07"
+area: genie
+concepts: [genie-agents, genie-knowledge-store, genie-conversation-api, genie-benchmarks-monitoring]
+exam_note: The Data Analyst Associate guide says Genie spaces.
+source: https://docs.databricks.com/aws/en/release-notes/product/

@@ -1,0 +1,9 @@
+id: environments-on-classic-compute
+name: Environments on classic compute
+label: beta
+area: compute
+since: 2026-08
+url: https://docs.databricks.com/aws/en/compute/environments-mode
+summary: Declare dependencies as an environment on a classic cluster instead of cluster libraries and init scripts.
+why: One dependency model across serverless and classic compute, instead of two that behave differently.
+checked: '2026-09-11'

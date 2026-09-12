@@ -1,0 +1,10 @@
+id: managed-iceberg-materialized-views
+name: Managed Iceberg materialized views
+label: public-preview
+area: delta-lake
+since: 2026-07
+url: https://docs.databricks.com/aws/en/iceberg/
+summary: Materialized views stored as managed Iceberg tables, readable by external Iceberg engines.
+why: Extends managed Iceberg, generally available since May, from base tables to derived ones.
+checked: '2026-09-11'
+concept: iceberg-interoperability

@@ -1,0 +1,13 @@
+id: access-modes-standard-dedicated
+current: Standard and dedicated
+trail:
+  - name: Shared and Single user
+    until: "2025"
+    note: What the cluster access modes were called when Unity Catalog arrived.
+  - name: Standard and dedicated
+    note: Standard is the multi-user, Lakeguard-isolated mode; dedicated is one user or one group.
+changed: "2025"
+area: compute
+concepts: [compute-options, serverless-compute, cluster-policies]
+exam_note: Exam questions and older material say Shared and Single user. The cluster UI now says Standard and Dedicated, which is the same thing renamed.
+source: https://docs.databricks.com/aws/en/compute/

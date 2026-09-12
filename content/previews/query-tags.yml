@@ -1,0 +1,10 @@
+id: query-tags
+name: Query tags
+label: public-preview
+area: query-history
+since: '2026'
+url: https://docs.databricks.com/aws/en/sql/user/queries/query-tags
+summary: Key-value tags set per session or per statement that show up in query history and in the system tables.
+why: The missing piece for attributing warehouse cost to a team or a dashboard.
+checked: '2026-09-11'
+concept: query-tags

@@ -1,0 +1,16 @@
+id: delta-live-tables-to-lakeflow-pipelines
+current: Lakeflow Spark Declarative Pipelines
+trail:
+  - name: Delta Live Tables (DLT)
+    until: "2025-06"
+    note: The name every exam guide and tutorial written before mid-2025 uses.
+  - name: Lakeflow Declarative Pipelines
+    until: "2025-11"
+    note: First Lakeflow-era name, still the wording in some breadcrumbs.
+  - name: Lakeflow Spark Declarative Pipelines
+    note: Current name. The docs also shorten it to "Lakeflow pipelines".
+changed: "2025-11"
+area: jobs-pipelines
+concepts: [pipelines-overview, pipelines-expectations]
+exam_note: Exam guides still say Delta Live Tables. The SKUs still start with DLT and the event log keeps dlt in its schema names, so the old name is not going away.
+source: https://docs.databricks.com/aws/en/ldp/concepts/where-is-dlt

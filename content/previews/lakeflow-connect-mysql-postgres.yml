@@ -1,0 +1,9 @@
+id: lakeflow-connect-mysql-postgres
+name: MySQL and PostgreSQL connectors
+label: public-preview
+area: data-ingestion
+since: '2026'
+url: https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/mysql
+summary: Managed log-based change capture from the MySQL binlog and from PostgreSQL logical replication.
+why: The two most common open-source operational databases, still behind SQL Server and Oracle in the connector line-up.
+checked: '2026-09-11'

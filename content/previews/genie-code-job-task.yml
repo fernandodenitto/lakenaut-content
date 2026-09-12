@@ -1,0 +1,9 @@
+id: genie-code-job-task
+name: Genie Code task in jobs
+label: beta
+area: jobs-pipelines
+since: 2026-08
+url: https://docs.databricks.com/aws/en/jobs/tasks/genie-code
+summary: Runs an autonomous agent from a natural-language prompt as a task inside a job.
+why: An agent as an orchestration step raises governance questions worth thinking about before it lands.
+checked: '2026-09-11'

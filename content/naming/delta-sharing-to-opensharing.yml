@@ -1,0 +1,13 @@
+id: delta-sharing-to-opensharing
+current: OpenSharing
+trail:
+  - name: Delta Sharing
+    until: "2026-06"
+    note: The open protocol for sharing tables across organisations and platforms.
+  - name: OpenSharing
+    note: Renamed alongside the open-source release of the wider sharing standard.
+changed: "2026-06-10"
+area: marketplace
+concepts: [marketplace-delta-sharing, opensharing-overview]
+exam_note: Every exam guide and most blog posts still say Delta Sharing.
+source: https://docs.databricks.com/aws/en/release-notes/product/2026/june

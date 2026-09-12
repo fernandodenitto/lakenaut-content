@@ -1,0 +1,11 @@
+id: hyperopt-removed
+name: Hyperopt
+kind: feature
+status: deprecated
+date: '2026-01-01'
+area: experiments
+summary: The open-source project is no longer maintained and it is gone from the machine learning runtime after 16.4 LTS.
+action: Optuna on a single node, or Ray Tune when the search has to be distributed.
+url: https://docs.databricks.com/aws/en/machine-learning/automl/
+concepts: []
+checked: '2026-09-11'

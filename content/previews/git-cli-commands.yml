@@ -1,0 +1,9 @@
+id: git-cli-commands
+name: Git CLI commands in Git folders
+label: public-preview
+area: workspace
+since: 2026-07
+url: https://docs.databricks.com/aws/en/repos/git-operations-with-repos
+summary: Run arbitrary git commands, including stash, interactive rebase and force push, inside a Git folder.
+why: Removes the limitation people hit within a week of using Git folders.
+checked: '2026-09-11'

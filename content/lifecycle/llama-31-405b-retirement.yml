@@ -1,0 +1,11 @@
+id: llama-31-405b-retirement
+name: Llama 3.1 405B
+kind: model
+status: ended
+date: '2026-05-15'
+area: serving
+summary: Retired from pay-per-token in February 2026 and from provisioned throughput in May.
+action: The documented replacement is GPT OSS 120B.
+url: https://docs.databricks.com/aws/en/machine-learning/retired-models-policy
+concepts: []
+checked: '2026-09-11'

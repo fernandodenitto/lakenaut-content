@@ -1,0 +1,35 @@
+# Lakenaut
+
+> Databricks explained one concept per file. Every page is written from the official
+> documentation and cites the pages it was written from, with the date each was checked.
+> Product names are used as nomenclature; this project is not affiliated with Databricks.
+
+This repository is the source. The rendered site is https://lakenaut.dev.
+
+- 163 concepts, each a markdown file with frontmatter (id, area, level, summary, sources, updated, maturity)
+- 8 learning paths, 5 certification roadmaps anchored to published exam guides
+- Renames, previews and end-of-support dates as structured YAML, not prose
+
+## How to use it
+
+- [INDEX.md](INDEX.md): every concept, with its summary and the documentation it cites.
+- [CLAUDE.md](CLAUDE.md): the conventions — frontmatter shape, folder rules, what may and may not be copied.
+- [https://lakenaut.dev/concepts.json](https://lakenaut.dev/concepts.json): the same index as JSON, always current.
+- [https://lakenaut.dev/taxonomy.json](https://lakenaut.dev/taxonomy.json): areas, paths, certifications and topics, as ids.
+- [https://lakenaut.dev/llms.txt](https://lakenaut.dev/llms.txt): the site's own map.
+
+## Rules for anyone quoting this
+
+- The prose is CC BY-NC-SA 4.0; the code is MIT. See LICENSE and LICENSE-CODE.
+- Cite the concept and its own sources, not this file. A concept names the pages it was
+  written from; those pages, not this repository, are the authority on the product.
+- Check `updated` and `maturity` before repeating anything: the platform changes weekly, and
+  a concept marked `beta` or `public-preview` describes something that may not exist next month.
+
+## Sections
+
+- Foundations: 16 concepts
+- Workspace: 51 concepts
+- SQL & Analytics: 26 concepts
+- Data Engineering: 30 concepts
+- AI & Machine Learning: 40 concepts

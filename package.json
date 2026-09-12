@@ -1,0 +1,20 @@
+{
+  "name": "lakemap-content",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Vault Obsidian: teoria per Lakenaut (Databricks knowledge base)",
+  "scripts": {
+    "validate": "node scripts/validate.ts",
+    "format": "prettier --write \"content/**/*.md\" \"scripts/**/*.ts\"",
+    "publish": "node scripts/publish.ts",
+    "index": "node scripts/index.ts"
+  },
+  "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "prettier": "^3.9.6"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

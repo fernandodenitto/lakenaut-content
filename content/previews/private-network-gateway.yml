@@ -1,0 +1,10 @@
+id: private-network-gateway
+name: Private network gateway
+label: private-preview
+area: workspace
+since: 2026-08
+url: https://docs.databricks.com/aws/en/security/network/serverless-network-security/private-network-gateway
+summary: One managed gateway for serverless traffic to your VPC, to on-premises systems and to the internet, reusing the network
+  connectivity configuration.
+why: It would replace today’s sprawl of connectivity configurations, PrivateLink and egress rules with a single object.
+checked: '2026-09-11'

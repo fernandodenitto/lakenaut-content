@@ -1,0 +1,10 @@
+id: uc-domains
+name: Domains and subdomains
+label: public-preview
+area: catalog
+since: '2026'
+url: https://docs.databricks.com/aws/en/uc-semantics/domains
+summary: Groups catalogs, tables and assets into business domains using governed tags, with one level of nesting.
+why: The organising layer Unity Catalog has been missing, and it feeds the Genie Ontology.
+checked: '2026-09-11'
+concept: uc-domains-and-pages

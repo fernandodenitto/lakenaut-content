@@ -1,0 +1,11 @@
+id: workspace-entitlement-inheritance
+name: Workspace entitlement inheritance becomes mandatory
+kind: behaviour
+status: ends
+date: '2026-09-14'
+area: workspace
+summary: The enforcement date for inherited entitlements, with no opt-out left.
+action: 'Check any automation that sets entitlements on system groups: that is what breaks.'
+url: https://docs.databricks.com/aws/en/admin/users-groups/groups
+concepts: []
+checked: '2026-09-11'

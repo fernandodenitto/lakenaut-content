@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 210" width="900" height="210" role="img" aria-labelledby="ttl">
+  <title id="ttl">Bronze, silver and gold layers of the medallion architecture</title>
+  <defs>
+    <marker id="h" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8a8f9a"/>
+    </marker>
+    <marker id="ha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#e2662a"/>
+    </marker>
+  </defs>
+  <style>
+    .box { fill:#8a8f9a; fill-opacity:.06; stroke:#8a8f9a; stroke-width:1.4 }
+    .box-a { fill:#e2662a; fill-opacity:.10; stroke:#e2662a; stroke-width:1.6 }
+    .zone { fill:none; stroke:#8a8f9a; stroke-width:1.2; stroke-dasharray:5 4; opacity:.75 }
+    .t  { font:600 13px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#8f959f }
+    .ta { font:600 13px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#e2662a }
+    .s  { font:400 11px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#82888f }
+    .lbl{ font:600 10px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#82888f; letter-spacing:.08em }
+    .m  { font:500 10.5px ui-monospace,SFMono-Regular,Menlo,monospace; fill:#82888f }
+    .ma { font:500 10.5px ui-monospace,SFMono-Regular,Menlo,monospace; fill:#e2662a }
+    .ar { fill:none; stroke:#8a8f9a; stroke-width:1.4; marker-end:url(#h) }
+    .ar-a { fill:none; stroke:#e2662a; stroke-width:1.6; marker-end:url(#ha) }
+    .ln { stroke:#8a8f9a; stroke-width:1.2; opacity:.6 }
+  </style>
+  <rect x="20" y="60" width="148" height="96" rx="9" class="box"/>
+  <text x="94" y="92" class="t" text-anchor="middle">Sources</text>
+  <text x="94" y="114" class="s" text-anchor="middle">files, databases,</text>
+  <text x="94" y="130" class="s" text-anchor="middle">message buses</text>
+  <path d="M168 108 L192 108" class="ar"/>
+  <rect x="196" y="60" width="148" height="96" rx="9" class="box"/>
+  <text x="270" y="92" class="t" text-anchor="middle">Bronze</text>
+  <text x="270" y="114" class="s" text-anchor="middle">raw, appended</text>
+  <text x="270" y="130" class="s" text-anchor="middle">as it arrived</text>
+  <path d="M344 108 L368 108" class="ar"/>
+  <rect x="372" y="60" width="148" height="96" rx="9" class="box"/>
+  <text x="446" y="92" class="t" text-anchor="middle">Silver</text>
+  <text x="446" y="114" class="s" text-anchor="middle">cleaned, typed,</text>
+  <text x="446" y="130" class="s" text-anchor="middle">deduplicated</text>
+  <path d="M520 108 L544 108" class="ar"/>
+  <rect x="548" y="60" width="148" height="96" rx="9" class="box-a"/>
+  <text x="622" y="92" class="ta" text-anchor="middle">Gold</text>
+  <text x="622" y="114" class="s" text-anchor="middle">aggregated for</text>
+  <text x="622" y="130" class="s" text-anchor="middle">one audience</text>
+  <path d="M696 108 L720 108" class="ar"/>
+  <rect x="724" y="60" width="148" height="96" rx="9" class="box"/>
+  <text x="798" y="92" class="t" text-anchor="middle">Consumers</text>
+  <text x="798" y="114" class="s" text-anchor="middle">dashboards, ML,</text>
+  <text x="798" y="130" class="s" text-anchor="middle">reverse ETL</text>
+  <text x="20" y="36" class="lbl" text-anchor="start">ONE DIRECTION, ONE JOB PER HOP</text>
+  <text x="288" y="184" class="m" text-anchor="middle">append only</text>
+  <text x="446" y="184" class="m" text-anchor="middle">expectations and MERGE</text>
+  <text x="640" y="184" class="m" text-anchor="middle">one table per question</text>
+  <path d="M94 60 C94 24, 830 24, 830 60" class="ar"/>
+  <text x="462" y="20" class="m" text-anchor="middle">reprocess from bronze when a rule changes</text>
+</svg>

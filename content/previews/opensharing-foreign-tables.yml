@@ -1,0 +1,9 @@
+id: opensharing-foreign-tables
+name: Sharing foreign schemas and tables
+label: beta
+area: marketplace
+since: 2026-08
+url: https://docs.databricks.com/aws/en/opensharing/create-share
+summary: Put tables that live in another system, federated into Unity Catalog, inside a share.
+why: Sharing without copying first. Foreign Delta tables are further ahead, at Public Preview.
+checked: '2026-09-11'

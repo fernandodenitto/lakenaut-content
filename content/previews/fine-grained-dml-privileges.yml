@@ -1,0 +1,9 @@
+id: fine-grained-dml-privileges
+name: Fine-grained DML privileges
+label: beta
+area: catalog
+since: 2026-08
+url: https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/fine-grained-dml-privileges
+summary: INSERT, UPDATE and DELETE as separate privileges under MODIFY, so a role can change rows without changing schema.
+why: The first change to the core Unity Catalog privilege list in years, which dates every permission diagram.
+checked: '2026-09-11'

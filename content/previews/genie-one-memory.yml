@@ -1,0 +1,9 @@
+id: genie-one-memory
+name: Memory in Genie One
+label: beta
+area: genie
+since: 2026-07
+url: https://docs.databricks.com/aws/en/genie-one/chat
+summary: Genie One remembering context between conversations, with confirmation prompts before it keeps something.
+why: Changes the experience for business users more than any other addition to the surface.
+checked: '2026-09-12'

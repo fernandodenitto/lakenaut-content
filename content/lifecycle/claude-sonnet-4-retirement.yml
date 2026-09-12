@@ -1,0 +1,11 @@
+id: claude-sonnet-4-retirement
+name: Claude Sonnet 4 on Foundation Model APIs
+kind: model
+status: ends
+date: '2026-10-09'
+area: serving
+summary: Retired from pay-per-token serving. Requests to it will stop working.
+action: 'Move to Claude Sonnet 4.6 and re-run your evaluations: a newer model is not a drop-in for prompt behaviour.'
+url: https://docs.databricks.com/aws/en/machine-learning/retired-models-policy
+concepts: []
+checked: '2026-09-11'

@@ -1,0 +1,13 @@
+id: dbx-unmaintained
+name: dbx by Databricks Labs
+kind: feature
+status: deprecated
+date: '2026-01-01'
+area: ecosystem
+summary: No longer actively maintained. Its own README points elsewhere.
+action: Deployments move to bundles. Expect to find dbx in repositories for years yet.
+url: https://docs.databricks.com/aws/en/archive/dev-tools/dbx/dbx
+concepts:
+- databricks-labs-tools
+- bundles-overview
+checked: '2026-09-11'

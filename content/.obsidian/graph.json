@@ -1,0 +1,17 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "colorGroups": [
+    { "query": "path:concepts/jobs-pipelines", "color": { "a": 1, "rgb": 5025616 } },
+    { "query": "path:concepts/catalog", "color": { "a": 1, "rgb": 14701138 } },
+    { "query": "path:concepts/compute", "color": { "a": 1, "rgb": 11621088 } },
+    { "query": "path:concepts/data-engineering", "color": { "a": 1, "rgb": 2201331 } },
+    { "query": "path:concepts/workspace", "color": { "a": 1, "rgb": 16750848 } },
+    { "query": "path:concepts/foundations", "color": { "a": 1, "rgb": 8421504 } },
+    { "query": "path:roadmaps", "color": { "a": 1, "rgb": 16711680 } }
+  ]
+}

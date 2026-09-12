@@ -1,0 +1,13 @@
+id: asset-bundles-to-automation-bundles
+current: Declarative Automation Bundles
+trail:
+  - name: Databricks Asset Bundles (DABs)
+    until: "2026-03"
+    note: The name in the CLI, in most repositories and in every tutorial so far.
+  - name: Declarative Automation Bundles
+    note: Renamed as the scope widened beyond deploying jobs and pipelines.
+changed: "2026-03-16"
+area: workspace
+concepts: [bundles-overview, bundles-variables-targets]
+exam_note: "The command is still databricks bundle, and the file is still databricks.yml, so in practice you will keep hearing DABs."
+source: https://docs.databricks.com/aws/en/release-notes/product/2026/march

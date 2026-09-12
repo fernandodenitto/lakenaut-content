@@ -1,0 +1,11 @@
+id: pat-legacy
+name: Personal access tokens
+kind: feature
+status: deprecated
+date: '2026-01-01'
+area: workspace
+summary: Now documented as the legacy way to authenticate.
+action: Use OAuth, and in continuous integration use workload identity federation rather than a long-lived token in a secret.
+url: https://docs.databricks.com/aws/en/dev-tools/auth/pat
+concepts: []
+checked: '2026-09-11'

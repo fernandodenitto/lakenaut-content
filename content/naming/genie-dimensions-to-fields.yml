@@ -1,0 +1,13 @@
+id: genie-dimensions-to-fields
+current: Fields
+trail:
+  - name: Dimensions
+    until: "2026-05"
+    note: What a Genie Agent called the columns you can group and filter by.
+  - name: Fields
+    note: Same thing, renamed inside Genie Agents and in metric views.
+changed: "2026-05-21"
+area: genie
+concepts: [genie-agents, genie-knowledge-store]
+exam_note: A small rename, but the Data Analyst Associate questions about Genie use the old word.
+source: https://docs.databricks.com/aws/en/genie-agents/concepts

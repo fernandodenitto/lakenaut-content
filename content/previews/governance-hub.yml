@@ -1,0 +1,9 @@
+id: governance-hub
+name: Governance Hub
+label: beta
+area: workspace
+since: 2026-07
+url: https://docs.databricks.com/aws/en/admin/governance-hub/
+summary: An account-level view of data health, coverage, AI usage and what is driving cost.
+why: The new front door for platform administrators, pulling together what is scattered today.
+checked: '2026-09-11'

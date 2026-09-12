@@ -1,0 +1,11 @@
+id: dbr-12-2-lts
+name: Databricks Runtime 12.2 LTS
+kind: runtime
+status: ended
+date: '2026-03-01'
+area: compute
+summary: Support ended in March 2026.
+action: Upgrade. There is no support path left for it.
+url: https://docs.databricks.com/aws/en/release-notes/runtime/databricks-runtime-ver
+concepts: []
+checked: '2026-09-11'

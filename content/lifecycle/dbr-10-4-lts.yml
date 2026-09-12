@@ -1,0 +1,11 @@
+id: dbr-10-4-lts
+name: Databricks Runtime 10.4 LTS
+kind: runtime
+status: ends
+date: '2026-11-01'
+area: compute
+summary: The last announced end of life among the old long-term support releases.
+action: Move the workloads still pinned to it. Anything this old will need testing, not just a version bump.
+url: https://docs.databricks.com/aws/en/release-notes/runtime/databricks-runtime-ver
+concepts: []
+checked: '2026-09-11'

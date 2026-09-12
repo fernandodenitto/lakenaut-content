@@ -1,0 +1,9 @@
+id: unified-trace-table
+name: Unified trace table
+label: beta
+area: ai-gateway
+since: 2026-08
+url: https://docs.databricks.com/aws/en/ai-gateway/unified-trace-table
+summary: Every request and response across the gateway in one Unity Catalog table, in OpenTelemetry format.
+why: The observability half of Unity Gateway reaching general availability.
+checked: '2026-09-11'

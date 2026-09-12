@@ -1,0 +1,13 @@
+id: vector-search-to-ai-search
+current: AI Search
+trail:
+  - name: Mosaic AI Vector Search
+    until: "2026-06"
+    note: Vector indexes over Delta tables, queried by embedding similarity.
+  - name: AI Search
+    note: Renamed when full-text indexes arrived, which need no embeddings at all.
+changed: "2026-06-01"
+area: vector-search
+concepts: [vector-search-basics, ai-search-indexes, rag-pipeline]
+exam_note: The Generative AI Engineer Associate guide predates the rename and says Vector Search.
+source: https://docs.databricks.com/aws/en/release-notes/product/2026/june

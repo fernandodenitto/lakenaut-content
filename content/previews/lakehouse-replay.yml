@@ -1,0 +1,9 @@
+id: lakehouse-replay
+name: Lakehouse Replay
+label: public-preview
+area: compute
+since: 2026-06
+url: https://docs.databricks.com/aws/en/compute/serverless/lakehouse-replay
+summary: Shadow-runs a sample of read-only serverless queries against a coming runtime version to catch regressions.
+why: It changes how a runtime upgrade is planned, from hoping to measuring.
+checked: '2026-09-11'

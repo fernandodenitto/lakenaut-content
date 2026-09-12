@@ -1,0 +1,9 @@
+id: genie-web-search
+name: Web search in Genie
+label: beta
+area: genie
+since: 2026-08
+url: https://docs.databricks.com/aws/en/genie-code/web-search
+summary: Public web search with citations inside Genie Code and Genie One, behind one workspace toggle.
+why: It puts material from outside the governed catalogue into an answer, which is a governance question as much as a feature.
+checked: '2026-09-12'

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 392" width="900" height="392" role="img" aria-labelledby="ttl">
+  <title id="ttl">Control plane, compute plane and storage in the Databricks architecture</title>
+  <defs>
+    <marker id="h" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8a8f9a"/>
+    </marker>
+    <marker id="ha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#e2662a"/>
+    </marker>
+  </defs>
+  <style>
+    .box { fill:#8a8f9a; fill-opacity:.06; stroke:#8a8f9a; stroke-width:1.4 }
+    .box-a { fill:#e2662a; fill-opacity:.10; stroke:#e2662a; stroke-width:1.6 }
+    .zone { fill:none; stroke:#8a8f9a; stroke-width:1.2; stroke-dasharray:5 4; opacity:.75 }
+    .t  { font:600 13px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#8f959f }
+    .ta { font:600 13px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#e2662a }
+    .s  { font:400 11px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#82888f }
+    .lbl{ font:600 10px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#82888f; letter-spacing:.08em }
+    .m  { font:500 10.5px ui-monospace,SFMono-Regular,Menlo,monospace; fill:#82888f }
+    .ma { font:500 10.5px ui-monospace,SFMono-Regular,Menlo,monospace; fill:#e2662a }
+    .ar { fill:none; stroke:#8a8f9a; stroke-width:1.4; marker-end:url(#h) }
+    .ar-a { fill:none; stroke:#e2662a; stroke-width:1.6; marker-end:url(#ha) }
+    .ln { stroke:#8a8f9a; stroke-width:1.2; opacity:.6 }
+  </style>
+  <rect x="14" y="14" width="872" height="112" rx="12" class="zone"/>
+  <text x="28" y="36" class="lbl" text-anchor="start">CONTROL PLANE&#160;&#160;·&#160;&#160;DATABRICKS ACCOUNT</text>
+  <rect x="30" y="48" width="194" height="62" rx="9" class="box"/>
+  <text x="44" y="74" class="t" text-anchor="start">Workspace UI</text>
+  <text x="44" y="92" class="s" text-anchor="start">notebooks, editor</text>
+  <rect x="244" y="48" width="194" height="62" rx="9" class="box"/>
+  <text x="258" y="74" class="t" text-anchor="start">Job scheduler</text>
+  <text x="258" y="92" class="s" text-anchor="start">triggers, run history</text>
+  <rect x="458" y="48" width="194" height="62" rx="9" class="box"/>
+  <text x="472" y="74" class="t" text-anchor="start">Unity Catalog</text>
+  <text x="472" y="92" class="s" text-anchor="start">metastore, permissions</text>
+  <rect x="672" y="48" width="194" height="62" rx="9" class="box"/>
+  <text x="686" y="74" class="t" text-anchor="start">Query history</text>
+  <text x="686" y="92" class="s" text-anchor="start">profiles, lineage</text>
+  <rect x="14" y="150" width="430" height="112" rx="12" class="zone"/>
+  <text x="28" y="172" class="lbl" text-anchor="start">SERVERLESS COMPUTE&#160;&#160;·&#160;&#160;DATABRICKS ACCOUNT</text>
+  <rect x="30" y="184" width="398" height="62" rx="9" class="box-a"/>
+  <text x="44" y="210" class="ta" text-anchor="start">Serverless clusters and SQL warehouses</text>
+  <text x="44" y="228" class="s" text-anchor="start">Databricks provisions and patches the VMs</text>
+  <rect x="456" y="150" width="430" height="112" rx="12" class="zone"/>
+  <text x="470" y="172" class="lbl" text-anchor="start">CLASSIC COMPUTE&#160;&#160;·&#160;&#160;YOUR CLOUD ACCOUNT</text>
+  <rect x="472" y="184" width="398" height="62" rx="9" class="box"/>
+  <text x="486" y="210" class="t" text-anchor="start">Job clusters and all-purpose clusters</text>
+  <text x="486" y="228" class="s" text-anchor="start">VMs in your VPC, your instance types</text>
+  <rect x="14" y="286" width="872" height="90" rx="12" class="zone"/>
+  <text x="28" y="308" class="lbl" text-anchor="start">STORAGE&#160;&#160;·&#160;&#160;YOUR CLOUD ACCOUNT</text>
+  <rect x="30" y="320" width="412" height="44" rx="9" class="box"/>
+  <text x="44" y="347" class="t" text-anchor="start">S3 / ADLS / GCS — table data and files</text>
+  <rect x="458" y="320" width="412" height="44" rx="9" class="box"/>
+  <text x="472" y="347" class="t" text-anchor="start">Unity Catalog managed storage location</text>
+  <path d="M380 126 L380 182" class="ar"/>
+  <path d="M820 126 L820 182" class="ar"/>
+  <text x="372" y="146" class="m" text-anchor="end">control</text>
+  <path d="M380 250 L380 316" class="ar"/>
+  <path d="M820 250 L820 316" class="ar"/>
+  <text x="372" y="280" class="m" text-anchor="end">data</text>
+</svg>

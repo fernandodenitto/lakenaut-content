@@ -1,0 +1,10 @@
+id: agent-memory
+name: Managed agent memory
+label: beta
+area: agents
+since: '2026'
+url: https://docs.databricks.com/aws/en/agents/agent-memory/managed-memory
+summary: Memory stores as Unity Catalog securables, holding episodic and semantic memory for an agent.
+why: Agents that remember are a different product from agents that do not.
+checked: '2026-09-11'
+concept: agent-memory

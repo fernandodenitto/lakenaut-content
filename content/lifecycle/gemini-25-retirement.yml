@@ -1,0 +1,11 @@
+id: gemini-25-retirement
+name: Gemini 2.5 Flash and 2.5 Pro
+kind: model
+status: ends
+date: '2026-10-02'
+area: serving
+summary: Both retire on the same day, Flash from pay-per-token and Pro from provisioned throughput.
+action: Databricks points at Gemini 3.1 Pro or 3.5 Flash. Budget time for re-evaluating, not just renaming the endpoint.
+url: https://docs.databricks.com/aws/en/machine-learning/retired-models-policy
+concepts: []
+checked: '2026-09-11'

@@ -1,0 +1,11 @@
+id: legacy-sql-editor
+name: The legacy SQL editor
+kind: feature
+status: ended
+date: '2026-07-31'
+area: sql-editor
+summary: Retired in late July 2026, and the individual opt-out went with it.
+action: Nothing to do beyond learning where things moved in the current editor.
+url: https://docs.databricks.com/aws/en/sql/user/sql-editor/
+concepts: []
+checked: '2026-09-11'

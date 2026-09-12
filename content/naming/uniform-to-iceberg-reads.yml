@@ -1,0 +1,13 @@
+id: uniform-to-iceberg-reads
+current: Iceberg reads
+trail:
+  - name: Delta UniForm (Universal Format)
+    until: "2026"
+    note: Generates Iceberg metadata next to Delta, so Iceberg clients can read the same files.
+  - name: Iceberg reads
+    note: The feature name today. UniForm survives as the name of the metadata layer underneath.
+changed: "2026"
+area: delta-lake
+concepts: [delta-lake-overview, managed-vs-external-tables]
+exam_note: Written material says UniForm, and so does the table property. The docs page is now titled around Iceberg reads instead.
+source: https://docs.databricks.com/aws/en/delta/uniform

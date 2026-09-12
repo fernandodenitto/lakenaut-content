@@ -1,0 +1,13 @@
+id: agent-framework-to-custom-agents
+current: Custom agents
+trail:
+  - name: Mosaic AI Agent Framework
+    until: "2026"
+    note: The set of APIs and conventions for writing an agent as ordinary Python.
+  - name: Custom agents
+    note: The documentation section is now Custom Agents, and no product carries the Agent Framework name.
+changed: "2026"
+area: agents
+concepts: [agent-framework, agent-deployment-apps]
+exam_note: The Generative AI Engineer Associate guide still says Agent Framework, and so does most written material. The concepts did not change; the name did.
+source: https://docs.databricks.com/aws/en/agents/custom-agents/author-agent

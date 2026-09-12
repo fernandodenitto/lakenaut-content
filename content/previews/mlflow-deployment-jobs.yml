@@ -1,0 +1,9 @@
+id: mlflow-deployment-jobs
+name: MLflow deployment jobs
+label: public-preview
+area: models
+since: '2026'
+url: https://docs.databricks.com/aws/en/mlflow/deployment-job
+summary: Bind a registered model to a job that evaluates, asks for approval and deploys when a new version appears.
+why: Model promotion with a human in the loop, without writing the orchestration yourself.
+checked: '2026-09-11'

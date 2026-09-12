@@ -1,0 +1,11 @@
+id: dbr-18-0
+name: Databricks Runtime 18.0
+kind: runtime
+status: ended
+date: '2026-07-15'
+area: compute
+summary: A non-long-term-support release, supported for about six months.
+action: Move to 18 LTS. This is the pattern for every non-LTS version, so pin to LTS unless you need something newer.
+url: https://docs.databricks.com/aws/en/release-notes/runtime/databricks-runtime-ver
+concepts: []
+checked: '2026-09-11'

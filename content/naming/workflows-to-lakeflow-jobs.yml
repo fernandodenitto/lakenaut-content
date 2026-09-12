@@ -1,0 +1,16 @@
+id: workflows-to-lakeflow-jobs
+current: Lakeflow Jobs
+trail:
+  - name: Databricks Jobs
+    until: "2025"
+    note: The original name, still the one in the REST API paths and in the SDK.
+  - name: Databricks Workflows
+    until: "2025-06"
+    note: The name the whole orchestration surface carried for years, and the one most exam guides use.
+  - name: Lakeflow Jobs
+    note: Current name, part of the Lakeflow family with Connect and the declarative pipelines.
+changed: "2025-06"
+area: jobs-pipelines
+concepts: [jobs-overview, jobs-task-dependencies, jobs-triggers, jobs-parameters, jobs-repair-runs, jobs-control-flow, runs-monitoring]
+exam_note: Exam guides and the certification portal still say Workflows. The docs no longer mention the old name at all, which makes it easy to think they are two products.
+source: https://docs.databricks.com/aws/en/jobs/

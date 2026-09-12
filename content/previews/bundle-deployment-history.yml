@@ -1,0 +1,9 @@
+id: bundle-deployment-history
+name: Bundle deployment history
+label: private-preview
+area: workspace
+since: '2026'
+url: https://docs.databricks.com/aws/en/dev-tools/bundles/deployments
+summary: A record of what each bundle deployment changed, queryable after the fact.
+why: Deployment archaeology is currently a git log and a guess.
+checked: '2026-09-11'

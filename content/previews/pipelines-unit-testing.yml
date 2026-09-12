@@ -1,0 +1,9 @@
+id: pipelines-unit-testing
+name: Unit testing for pipelines
+label: beta
+area: jobs-pipelines
+since: 2026-07
+url: https://docs.databricks.com/aws/en/ldp/unit-testing
+summary: Python unit tests over pipeline transforms with mocked table inputs, run from the pipeline editor.
+why: The first native testing story for declarative pipelines, and the biggest gap against plain Spark.
+checked: '2026-09-11'

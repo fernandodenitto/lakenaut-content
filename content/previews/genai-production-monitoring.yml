@@ -1,0 +1,10 @@
+id: genai-production-monitoring
+name: Production monitoring for GenAI apps
+label: beta
+area: experiments
+since: '2026'
+url: https://docs.databricks.com/aws/en/mlflow3/genai/eval-monitor/production-monitoring
+summary: Runs the same evaluation scorers against a sample of live traces and attaches the results to each trace.
+why: The only honest way to know whether a deployed agent is still good.
+checked: '2026-09-11'
+concept: mlflow-tracing

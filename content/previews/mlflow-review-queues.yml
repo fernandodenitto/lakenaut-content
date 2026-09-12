@@ -1,0 +1,9 @@
+id: mlflow-review-queues
+name: MLflow review queues
+label: beta
+area: experiments
+since: '2026'
+url: https://docs.databricks.com/aws/en/mlflow3/genai/human-feedback/
+summary: A reviewer workflow for labelling traces one item at a time, for people who are not workspace users.
+why: Expert feedback is the input that makes an LLM judge worth trusting.
+checked: '2026-09-11'

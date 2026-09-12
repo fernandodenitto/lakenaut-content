@@ -1,0 +1,17 @@
+id: online-tables-to-online-feature-store
+current: Online Feature Store
+trail:
+- name: Online tables
+  until: '2026'
+  note: Low-latency copies of a feature table for real-time serving.
+- name: Online Feature Store
+  note: Now backed by Lakebase, provisioned with create_online_store and fed by publish_table.
+changed: '2026'
+area: features
+concepts:
+- feature-engineering
+- model-serving-endpoints
+- online-feature-store
+exam_note: The Machine Learning Associate guide predates the change and says online tables. The old documentation URL now
+  redirects.
+source: https://docs.databricks.com/aws/en/machine-learning/feature-store/online-feature-store

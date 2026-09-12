@@ -1,0 +1,13 @@
+id: apply-changes-to-auto-cdc
+current: AUTO CDC
+trail:
+  - name: APPLY CHANGES
+    until: "2025"
+    note: The declarative pipeline API for change data capture, with the same syntax.
+  - name: AUTO CDC
+    note: Same behaviour, new name. The old API still works.
+changed: "2025"
+area: jobs-pipelines
+concepts: [pipelines-overview, pipelines-auto-cdc]
+exam_note: "The docs are explicit: the AUTO CDC APIs replace the APPLY CHANGES APIs and have the same syntax. Exam questions written earlier say APPLY CHANGES, and the answer is the same either way."
+source: https://docs.databricks.com/aws/en/ldp/cdc

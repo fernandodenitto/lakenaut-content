@@ -1,0 +1,13 @@
+id: databricks-assistant-to-genie-code
+current: Genie Code
+trail:
+  - name: Databricks Assistant
+    until: "2026-03"
+    note: The in-product AI helper in notebooks, the SQL editor and dashboards.
+  - name: Genie Code
+    note: Renamed when it gained agentic, multi-step capabilities.
+changed: "2026-03-11"
+area: workspace
+concepts: [notebooks-basics]
+exam_note: Anything written before March 2026 calls it Databricks Assistant.
+source: https://docs.databricks.com/aws/en/release-notes/product/2026/march

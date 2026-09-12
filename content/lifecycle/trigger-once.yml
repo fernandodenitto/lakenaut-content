@@ -1,0 +1,12 @@
+id: trigger-once
+name: Trigger.Once in Structured Streaming
+kind: feature
+status: deprecated
+date: '2022-10-01'
+area: streaming
+summary: Deprecated since Databricks Runtime 11.3 LTS, and still all over older tutorials.
+action: Use Trigger.AvailableNow, which processes in several batches instead of one and does not fall over on a large backlog.
+url: https://docs.databricks.com/aws/en/structured-streaming/triggers
+concepts:
+- streaming-triggers
+checked: '2026-09-11'

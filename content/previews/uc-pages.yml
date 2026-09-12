@@ -1,0 +1,10 @@
+id: uc-pages
+name: Pages
+label: beta
+area: catalog
+since: '2026'
+url: https://docs.databricks.com/aws/en/uc-semantics/pages
+summary: Governed, authoritative definitions of business terms, entities and acronyms, held in Unity Catalog.
+why: A glossary that the AI surfaces actually read, rather than a wiki nobody updates.
+checked: '2026-09-11'
+concept: uc-domains-and-pages

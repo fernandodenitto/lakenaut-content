@@ -1,0 +1,15 @@
+id: lakehouse-monitoring-to-data-profiling
+current: Data profiling
+trail:
+- name: Lakehouse Monitoring
+  until: '2026'
+  note: Scheduled statistics and drift metrics for a table.
+- name: Data profiling
+  note: Now one half of Unity Catalog data quality monitoring, next to anomaly detection.
+changed: '2026'
+area: data-quality
+concepts:
+- data-quality-overview
+- model-monitoring
+exam_note: The docs still say "Data profiling was formerly known as Lakehouse Monitoring".
+source: https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/

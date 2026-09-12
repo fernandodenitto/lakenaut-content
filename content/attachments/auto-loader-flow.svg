@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 218" width="900" height="218" role="img" aria-labelledby="ttl">
+  <title id="ttl">How Auto Loader discovers files and loads them exactly once</title>
+  <defs>
+    <marker id="h" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8a8f9a"/>
+    </marker>
+    <marker id="ha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#e2662a"/>
+    </marker>
+  </defs>
+  <style>
+    .box { fill:#8a8f9a; fill-opacity:.06; stroke:#8a8f9a; stroke-width:1.4 }
+    .box-a { fill:#e2662a; fill-opacity:.10; stroke:#e2662a; stroke-width:1.6 }
+    .zone { fill:none; stroke:#8a8f9a; stroke-width:1.2; stroke-dasharray:5 4; opacity:.75 }
+    .t  { font:600 13px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#8f959f }
+    .ta { font:600 13px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#e2662a }
+    .s  { font:400 11px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#82888f }
+    .lbl{ font:600 10px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#82888f; letter-spacing:.08em }
+    .m  { font:500 10.5px ui-monospace,SFMono-Regular,Menlo,monospace; fill:#82888f }
+    .ma { font:500 10.5px ui-monospace,SFMono-Regular,Menlo,monospace; fill:#e2662a }
+    .ar { fill:none; stroke:#8a8f9a; stroke-width:1.4; marker-end:url(#h) }
+    .ar-a { fill:none; stroke:#e2662a; stroke-width:1.6; marker-end:url(#ha) }
+    .ln { stroke:#8a8f9a; stroke-width:1.2; opacity:.6 }
+  </style>
+  <text x="20" y="30" class="lbl" text-anchor="start">CLOUD OBJECT STORAGE</text>
+  <rect x="20" y="44" width="186" height="128" rx="9" class="box"/>
+  <text x="34" y="70" class="m" text-anchor="start">2026-09-08/a.json</text>
+  <text x="34" y="92" class="m" text-anchor="start">2026-09-09/b.json</text>
+  <text x="34" y="114" class="ma" text-anchor="start">2026-09-10/c.json &#8592; new</text>
+  <text x="34" y="136" class="ma" text-anchor="start">2026-09-10/d.json &#8592; new</text>
+  <text x="34" y="162" class="s" text-anchor="start">files keep arriving</text>
+  <path d="M206 108 L244 108" class="ar"/>
+  <text x="244" y="30" class="lbl" text-anchor="start">cloudFiles SOURCE</text>
+  <rect x="244" y="44" width="214" height="128" rx="9" class="box-a"/>
+  <text x="260" y="70" class="ta" text-anchor="start">Discovery</text>
+  <text x="260" y="88" class="s" text-anchor="start">directory listing or</text>
+  <text x="260" y="104" class="s" text-anchor="start">file notification</text>
+  <text x="260" y="132" class="ta" text-anchor="start">Schema inference</text>
+  <text x="260" y="150" class="s" text-anchor="start">and evolution</text>
+  <path d="M458 108 L496 108" class="ar"/>
+  <rect x="496" y="44" width="186" height="128" rx="9" class="box"/>
+  <text x="512" y="70" class="t" text-anchor="start">Checkpoint</text>
+  <text x="512" y="90" class="m" text-anchor="start">schemaLocation</text>
+  <text x="512" y="110" class="s" text-anchor="start">RocksDB file list</text>
+  <text x="512" y="138" class="s" text-anchor="start">the reason a file</text>
+  <text x="512" y="154" class="s" text-anchor="start">loads exactly once</text>
+  <path d="M682 108 L720 108" class="ar"/>
+  <text x="720" y="30" class="lbl" text-anchor="start">DELTA TABLE</text>
+  <rect x="720" y="44" width="160" height="128" rx="9" class="box"/>
+  <text x="736" y="70" class="t" text-anchor="start">bronze.events</text>
+  <text x="736" y="92" class="s" text-anchor="start">appended rows</text>
+  <text x="736" y="120" class="ma" text-anchor="start">_rescued_data</text>
+  <text x="736" y="138" class="s" text-anchor="start">whatever did not</text>
+  <text x="736" y="154" class="s" text-anchor="start">fit the schema</text>
+  <text x="20" y="202" class="m" text-anchor="start">trigger(availableNow=True) turns the same code into a scheduled batch that stops when it runs out of files</text>
+</svg>

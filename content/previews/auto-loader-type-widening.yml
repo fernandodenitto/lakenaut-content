@@ -1,0 +1,9 @@
+id: auto-loader-type-widening
+name: Automatic type widening in Auto Loader
+label: public-preview
+area: data-ingestion
+since: 2026-03
+url: https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/auto-loader/type-widening
+summary: Evolves an integer column to long, or float to double, without rewriting the table.
+why: Schema evolution is the part of Auto Loader people get wrong most often, and this changes the answer.
+checked: '2026-09-11'

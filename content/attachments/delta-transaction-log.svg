@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 266" width="900" height="266" role="img" aria-labelledby="ttl">
+  <title id="ttl">A Delta table on disk and its transaction log versions</title>
+  <defs>
+    <marker id="h" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8a8f9a"/>
+    </marker>
+    <marker id="ha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#e2662a"/>
+    </marker>
+  </defs>
+  <style>
+    .box { fill:#8a8f9a; fill-opacity:.06; stroke:#8a8f9a; stroke-width:1.4 }
+    .box-a { fill:#e2662a; fill-opacity:.10; stroke:#e2662a; stroke-width:1.6 }
+    .zone { fill:none; stroke:#8a8f9a; stroke-width:1.2; stroke-dasharray:5 4; opacity:.75 }
+    .t  { font:600 13px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#8f959f }
+    .ta { font:600 13px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#e2662a }
+    .s  { font:400 11px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#82888f }
+    .lbl{ font:600 10px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#82888f; letter-spacing:.08em }
+    .m  { font:500 10.5px ui-monospace,SFMono-Regular,Menlo,monospace; fill:#82888f }
+    .ma { font:500 10.5px ui-monospace,SFMono-Regular,Menlo,monospace; fill:#e2662a }
+    .ar { fill:none; stroke:#8a8f9a; stroke-width:1.4; marker-end:url(#h) }
+    .ar-a { fill:none; stroke:#e2662a; stroke-width:1.6; marker-end:url(#ha) }
+    .ln { stroke:#8a8f9a; stroke-width:1.2; opacity:.6 }
+  </style>
+  <text x="20" y="30" class="lbl" text-anchor="start">WHAT A DELTA TABLE IS ON DISK</text>
+  <rect x="20" y="44" width="400" height="176" rx="9" class="box"/>
+  <text x="36" y="70" class="ma" text-anchor="start">/orders/</text>
+  <text x="50" y="96" class="m" text-anchor="start">part-00000-....snappy.parquet</text>
+  <text x="50" y="116" class="m" text-anchor="start">part-00001-....snappy.parquet</text>
+  <text x="50" y="136" class="m" text-anchor="start">part-00002-....snappy.parquet</text>
+  <text x="36" y="176" class="ma" text-anchor="start">_delta_log/</text>
+  <text x="50" y="198" class="m" text-anchor="start">00000.json  00001.json  00002.json</text>
+  <text x="20" y="250" class="s" text-anchor="start">The parquet files are just files. The log is the table.</text>
+  <path d="M420 132 L462 132" class="ar"/>
+  <text x="478" y="30" class="lbl" text-anchor="start">EVERY COMMIT IS A VERSION</text>
+  <rect x="478" y="44" width="400" height="48" rx="9" class="box"/>
+  <text x="494" y="66" class="t" text-anchor="start">v0</text>
+  <text x="530" y="66" class="s" text-anchor="start">CREATE + INSERT</text>
+  <text x="760" y="66" class="m" text-anchor="start">atomic commit</text>
+  <path d="M678 92 L678 104" class="ln"/>
+  <rect x="478" y="104" width="400" height="48" rx="9" class="box"/>
+  <text x="494" y="126" class="t" text-anchor="start">v1</text>
+  <text x="530" y="126" class="s" text-anchor="start">MERGE upsert</text>
+  <text x="760" y="126" class="m" text-anchor="start">atomic commit</text>
+  <path d="M678 152 L678 164" class="ln"/>
+  <rect x="478" y="164" width="400" height="48" rx="9" class="box-a"/>
+  <text x="494" y="186" class="ta" text-anchor="start">v2</text>
+  <text x="530" y="186" class="s" text-anchor="start">DELETE + OPTIMIZE</text>
+  <text x="760" y="186" class="m" text-anchor="start">atomic commit</text>
+  <path d="M872 68 C890 68, 890 212, 872 212" class="ar-a"/>
+  <text x="878" y="250" class="ma" text-anchor="end">VERSION AS OF 1 reads the past without copying it</text>
+</svg>

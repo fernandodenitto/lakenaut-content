@@ -1,0 +1,10 @@
+id: relationship-scoped-filters
+name: Relationship-scoped and cross-dataset filters
+label: public-preview
+area: dashboards
+since: 2026-09
+url: https://docs.databricks.com/aws/en/dashboards/manage/filters/
+summary: A filter that travels across datasets through the relationships defined on the dashboard.
+why: The other half of dashboard relationships, and what makes a multi-fact dashboard behave like one model.
+concept: dashboard-filters-and-variables
+checked: '2026-09-12'

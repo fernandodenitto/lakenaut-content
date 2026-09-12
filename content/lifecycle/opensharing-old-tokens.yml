@@ -1,0 +1,12 @@
+id: opensharing-old-tokens
+name: Old-format OpenSharing recipient tokens
+kind: behaviour
+status: ends
+date: '2026-12-08'
+area: marketplace
+summary: Tokens issued in the old format expire, at the latest, on this date.
+action: Rotate recipient credentials before then, or the sharing partner loses access without warning.
+url: https://docs.databricks.com/aws/en/opensharing/create-recipient
+concepts:
+- opensharing-overview
+checked: '2026-09-11'

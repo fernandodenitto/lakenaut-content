@@ -1,0 +1,13 @@
+id: system-tables-deprecated-columns
+name: Deprecated system table columns and schemas
+kind: behaviour
+status: deprecated
+date: '2026-08-18'
+area: catalog
+summary: Two lineage columns stopped being populated during 2026, and two schemas now hold empty tables.
+action: Queries against them return nothing rather than failing, which is the worse failure mode. Check any dashboard built
+  on them.
+url: https://docs.databricks.com/aws/en/admin/system-tables/
+concepts:
+- system-tables
+checked: '2026-09-11'

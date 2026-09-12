@@ -1,0 +1,9 @@
+id: jobs-health-score
+name: Lakeflow Jobs health score
+label: private-preview
+area: runs
+since: '2026'
+url: https://docs.databricks.com/aws/en/jobs/jobs-health
+summary: A health score per job, summarising reliability and cost signals in one number.
+why: Worth watching because it would change how job monitoring is presented, not only measured.
+checked: '2026-09-11'

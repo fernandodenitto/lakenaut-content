@@ -1,0 +1,11 @@
+id: supervisor-api-eol
+name: The Supervisor API
+kind: api
+status: ends
+date: '2026-09-30'
+area: agents
+summary: The Beta API for supervisor agents reaches end of life and stops being available.
+action: Move to a custom agent deployed on Databricks Apps, which is the documented path.
+url: https://docs.databricks.com/aws/en/agents/custom-agents/supervisor-api-app
+concepts: []
+checked: '2026-09-11'

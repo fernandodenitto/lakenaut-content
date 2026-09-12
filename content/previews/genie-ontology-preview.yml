@@ -1,0 +1,11 @@
+id: genie-ontology-preview
+name: Genie Ontology
+label: public-preview
+area: genie
+since: 2026-06
+url: https://docs.databricks.com/aws/en/genie/genie-ontology
+summary: The shared context layer behind Genie, half defined by you in Unity Catalog and half inferred from metric views,
+  dashboards and queries.
+why: On by default since August 2026, so it is already shaping answers in workspaces that never opted in.
+checked: '2026-09-11'
+concept: genie-ontology

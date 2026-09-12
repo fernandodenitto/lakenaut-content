@@ -1,0 +1,9 @@
+id: unity-catalog-skills
+name: Unity Catalog Skills
+label: beta
+area: agents
+since: 2026-08
+url: https://docs.databricks.com/aws/en/agents/uc-skills/
+summary: Governed, reusable instructions that an agent can load, registered in Unity Catalog.
+why: Skills as a governed object rather than a prompt pasted into a notebook.
+checked: '2026-09-11'

@@ -1,0 +1,10 @@
+id: prompt-registry
+name: MLflow Prompt Registry
+label: beta
+area: experiments
+since: '2026'
+url: https://docs.databricks.com/aws/en/mlflow3/genai/prompt-version-mgmt/prompt-registry/
+summary: Version prompt templates like code, with aliases for production and automated optimisation.
+why: Prompts are the part of a generative application that changes most and is versioned least.
+checked: '2026-09-11'
+concept: mlflow-tracing

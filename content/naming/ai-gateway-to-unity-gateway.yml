@@ -1,0 +1,13 @@
+id: ai-gateway-to-unity-gateway
+current: Unity Gateway
+trail:
+  - name: Mosaic AI Gateway
+    until: "2026"
+    note: Rate limits, guardrails, usage tracking and payload logging in front of model endpoints.
+  - name: Unity Gateway
+    note: Generally available since August 2026, with governed model services as Unity Catalog securables.
+changed: "2026-08-04"
+area: ai-gateway
+concepts: [ai-gateway-basics, model-services]
+exam_note: The Generative AI Engineer Associate guide says AI Gateway. The old per-endpoint configuration page is now marked legacy in the docs.
+source: https://docs.databricks.com/aws/en/ai-gateway/

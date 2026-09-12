@@ -1,0 +1,9 @@
+id: lakehouse-realtime-warehouse
+name: Lakehouse Real-Time warehouse
+label: beta
+area: sql-warehouses
+since: '2026'
+url: https://docs.databricks.com/aws/en/compute/sql-warehouse/warehouse-types
+summary: A fourth SQL warehouse type aimed at low-latency serving, alongside serverless, pro and classic.
+why: Changes the answer to "which warehouse type" questions once it settles.
+checked: '2026-09-11'

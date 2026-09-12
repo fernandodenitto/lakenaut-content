@@ -1,0 +1,9 @@
+id: replace-using-flows
+name: REPLACE USING flows
+label: beta
+area: jobs-pipelines
+since: 2026-08
+url: https://docs.databricks.com/aws/en/ldp/flows-replace-using
+summary: Keeps a streaming table in sync from partial snapshots by replacing every row that matches the key columns.
+why: Completes the change-capture family next to AUTO CDC and REPLACE WHERE, which are both generally available.
+checked: '2026-09-11'

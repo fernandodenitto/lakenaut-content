@@ -1,0 +1,9 @@
+id: dropped-table-recovery-period
+name: Configurable recovery period for dropped tables
+label: public-preview
+area: catalog
+since: 2026-06
+url: https://docs.databricks.com/aws/en/tables/managed
+summary: Set how long a dropped managed table can be undropped, from nothing at all to thirty days.
+why: It changes what UNDROP TABLE can actually do, which is the sort of detail an exam asks about.
+checked: '2026-09-11'

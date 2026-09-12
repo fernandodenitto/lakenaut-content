@@ -1,0 +1,10 @@
+id: agent-services
+name: Agent services in Unity Catalog
+label: beta
+area: ai-gateway
+since: '2026'
+url: https://docs.databricks.com/aws/en/ai-gateway/agent-services
+summary: Agents registered as Unity Catalog securables, discoverable next to tables and models.
+why: Governance for agents that works like governance for data.
+checked: '2026-09-11'
+concept: model-services

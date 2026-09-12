@@ -1,0 +1,11 @@
+id: dbr-13-3-lts
+name: Databricks Runtime 13.3 LTS
+kind: runtime
+status: ended
+date: '2026-08-22'
+area: compute
+summary: Support ended in August 2026.
+action: Clusters pinned here are running unsupported. Treat any incident on them as an upgrade first.
+url: https://docs.databricks.com/aws/en/release-notes/runtime/databricks-runtime-ver
+concepts: []
+checked: '2026-09-11'
