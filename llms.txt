@@ -12,6 +12,7 @@ This repository is the source. The rendered site is https://lakenaut.dev.
 
 ## How to use it
 
+- [llms-full.txt](llms-full.txt): every published concept in one file, text and all. Point a model at this one.
 - [INDEX.md](INDEX.md): every concept, with its summary and the documentation it cites.
 - [CLAUDE.md](CLAUDE.md): the conventions — frontmatter shape, folder rules, what may and may not be copied.
 - [https://lakenaut.dev/concepts.json](https://lakenaut.dev/concepts.json): the same index as JSON, always current.

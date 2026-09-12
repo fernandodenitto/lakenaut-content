@@ -8,7 +8,6 @@
 An Obsidian vault that is also a website.
 
 [![Site](https://img.shields.io/badge/read%20it-lakenaut.dev-e2590b?style=flat-square)](https://lakenaut.dev)
-[![Validate](https://img.shields.io/github/actions/workflow/status/fernandodenitto/lakenaut-content/validate.yml?branch=main&style=flat-square&label=validate)](https://github.com/fernandodenitto/lakenaut-content/actions/workflows/validate.yml)
 ![Concepts](https://img.shields.io/badge/concepts-163-e2590b?style=flat-square)
 ![Paths](https://img.shields.io/badge/paths-8-e2590b?style=flat-square)
 ![Roadmaps](https://img.shields.io/badge/roadmaps-5-e2590b?style=flat-square)
@@ -19,17 +18,41 @@ An Obsidian vault that is also a website.
 ![Not affiliated](https://img.shields.io/badge/not%20affiliated%20with-Databricks-9C9590?style=flat-square)
 [![Discuss](https://img.shields.io/badge/discuss-r%2Flakenaut-ff4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/r/lakenaut/)
 
-**[Read it on the site](https://lakenaut.dev) · [Open it in Obsidian](#read-it-in-obsidian) · [Browse the index](INDEX.md) · [Feed an LLM](llms.txt)**
+**[Read it on the site](https://lakenaut.dev) · [Open it in Obsidian](#read-it-in-obsidian) · [Browse the index](INDEX.md) · [Feed an LLM](llms-full.txt)**
 
 </div>
 
 ---
+
+> **Published, not edited.** This repository is a copy that [lakenaut.dev](https://lakenaut.dev)
+> publishes: the vault is written in the site's own repository and pushed here whenever it changes,
+> and at least once a day. Editing a file here would be overwritten by the next publish — open an
+> issue or use the "Report a problem" box at the foot of any page on the site instead.
 
 This is theory, not a link farm: every concept is written out in full, in Databricks-specific terms, not generic SQL/Python tutorials with a Databricks label. The rule that keeps it coherent is simple — **one concept, one markdown file**. If an idea needs to show up somewhere else, it gets a wikilink, never a copy-paste.
 
 ## Read it on the website
 
 [lakenaut.dev](https://lakenaut.dev) renders this same content with a sidebar organized by Databricks product area, certification roadmaps with a drawer per concept, and a d3-force graph of every wikilink.
+
+## Point a model at it
+
+`llms-full.txt` is every published concept in one file — 163 of them, with the text as written,
+the date each was last checked against the documentation, and the documentation URLs behind it.
+That is the file to attach, paste or index.
+
+| File | What it is |
+|---|---|
+| [`llms-full.txt`](llms-full.txt) | The whole corpus. One `# id — title` heading per concept, then a metadata line, then the text. |
+| [`llms.txt`](llms.txt) | The short map: what this is, what may be quoted, where the JSON lives. |
+| [`INDEX.md`](INDEX.md) | Every concept with its summary and sources, grouped the way the site groups them. |
+| [`CLAUDE.md`](CLAUDE.md) | The conventions: frontmatter, folder rules, what may and may not be copied. |
+| [`content/`](content/) | The vault itself, one markdown file per concept, with YAML frontmatter. |
+
+Two rules if you quote it: cite the concept's own sources rather than this repository — a concept
+names the documentation it was written from, and that documentation is the authority — and check
+the `updated` and `maturity` fields, because a page marked `beta` describes something that may not
+exist next month.
 
 ## Read it in Obsidian
 
