@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260" role="img" aria-labelledby="ttl">
+  <title id="ttl">What Auto picks: an ML runtime, a GPU or a runtime below 14.3 makes the cluster Dedicated, everything else Standard</title>
+  <defs>
+    <marker id="h" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8a8f9a"/>
+    </marker>
+    <marker id="ha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#e2662a"/>
+    </marker>
+  </defs>
+  <style>
+    .box { fill:#8a8f9a; fill-opacity:.06; stroke:#8a8f9a; stroke-width:1.4 }
+    .box-a { fill:#e2662a; fill-opacity:.10; stroke:#e2662a; stroke-width:1.6 }
+    .zone { fill:none; stroke:#8a8f9a; stroke-width:1.2; stroke-dasharray:5 4; opacity:.75 }
+    .t  { font:600 13px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#8f959f }
+    .ta { font:600 13px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#e2662a }
+    .s  { font:400 11px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#82888f }
+    .lbl{ font:600 10px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#82888f; letter-spacing:.08em }
+    .m  { font:500 10.5px ui-monospace,SFMono-Regular,Menlo,monospace; fill:#82888f }
+    .ma { font:500 10.5px ui-monospace,SFMono-Regular,Menlo,monospace; fill:#e2662a }
+    .ar { fill:none; stroke:#8a8f9a; stroke-width:1.4; marker-end:url(#h) }
+    .ar-a { fill:none; stroke:#e2662a; stroke-width:1.6; marker-end:url(#ha) }
+  </style>
+
+  <text class="lbl" x="20" y="20">ACCESS MODE LEFT ON AUTO</text>
+  <rect class="box" x="20" y="30" width="170" height="62" rx="10"/>
+  <text class="t" x="34" y="54">New compute</text>
+  <text class="m" x="34" y="76">data_security_mode: AUTO</text>
+
+  <!-- the three questions -->
+  <rect class="box" x="240" y="24" width="290" height="152" rx="10"/>
+  <text class="lbl" x="256" y="46">ANY OF THESE?</text>
+  <text class="s" x="256" y="72">A machine learning runtime</text>
+  <text class="s" x="256" y="96">A GPU instance type</text>
+  <text class="s" x="256" y="120">A runtime below 14.3</text>
+  <line x1="256" y1="136" x2="514" y2="136" stroke="#8a8f9a" stroke-width="1" opacity=".5"/>
+  <text class="s" x="256" y="158">Nobody chose this. The runtime did.</text>
+  <path class="ar" d="M196 60 H234"/>
+
+  <!-- outcomes -->
+  <rect class="box-a" x="590" y="24" width="290" height="66" rx="10"/>
+  <text class="ta" x="606" y="48">Yes → Dedicated</text>
+  <text class="s" x="606" y="70">One user or one group. No Lakeguard isolation.</text>
+  <path class="ar-a" d="M536 58 H584"/>
+
+  <rect class="box" x="590" y="110" width="290" height="66" rx="10"/>
+  <text class="t" x="606" y="134">No → Standard</text>
+  <text class="s" x="606" y="156">Shared, isolated, fine-grained access enforced.</text>
+  <path class="ar" d="M536 143 H584"/>
+
+  <!-- the consequence -->
+  <rect class="zone" x="240" y="196" width="640" height="46" rx="9"/>
+  <text class="ta" x="256" y="216">What it costs you when it happens quietly</text>
+  <text class="s" x="256" y="234">A Unity Catalog Python UDF stops working, and nothing in the error mentions the access mode.</text>
+</svg>

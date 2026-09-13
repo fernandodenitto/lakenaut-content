@@ -41,6 +41,8 @@ OpenSharing inverts that. The provider registers what may be read; the recipient
 
 ### The three objects and their lifecycle
 
+![A share and a recipient on the provider's side, a provider object on the recipient's side, and the data staying in the provider's own storage](../../../attachments/opensharing-objects.svg)
+
 | Object | Lives in | Created by | Deleting it |
 | --- | --- | --- | --- |
 | Share | the provider's metastore | provider, with the `CREATE SHARE` privilege | every recipient loses access to it |

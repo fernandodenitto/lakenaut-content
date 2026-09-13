@@ -39,6 +39,8 @@ Before `MERGE`, applying a batch of changes meant a `DELETE` of the affected key
 
 ## How it works
 
+![Which MERGE clause fires: a matched pair, a source row with no target, a target row with no source, all applied in one atomic commit](../../../attachments/merge-clauses.svg)
+
 ### The three clause families
 
 | Clause | Fires when | Actions allowed | Availability |

@@ -55,6 +55,8 @@ The invoice arrives as an amount per SKU per workspace per day, and no team owns
 
 ## How it works
 
+![A tag on the compute follows the usage into system.billing.usage, where a budget watches one filtered slice and a query answers everything else; untagged usage escapes both](../../../attachments/cost-attribution-flow.svg)
+
 ### Default tags
 
 Databricks tags the compute it deploys in your cloud account without being asked. These tags identify the resource and propagate to AWS EC2 and EBS instances, so they show up in cloud-side cost analysis too.

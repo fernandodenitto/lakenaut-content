@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 264" width="900" height="264" role="img" aria-labelledby="ttl">
+  <title id="ttl">Cost attribution: a tag on the compute follows the usage into the billing table, where budgets watch it and queries answer everything else</title>
+  <defs>
+    <marker id="h" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8a8f9a"/>
+    </marker>
+    <marker id="ha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#e2662a"/>
+    </marker>
+  </defs>
+  <style>
+    .box { fill:#8a8f9a; fill-opacity:.06; stroke:#8a8f9a; stroke-width:1.4 }
+    .box-a { fill:#e2662a; fill-opacity:.10; stroke:#e2662a; stroke-width:1.6 }
+    .zone { fill:none; stroke:#8a8f9a; stroke-width:1.2; stroke-dasharray:5 4; opacity:.75 }
+    .t  { font:600 13px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#8f959f }
+    .ta { font:600 13px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#e2662a }
+    .s  { font:400 11px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#82888f }
+    .lbl{ font:600 10px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#82888f; letter-spacing:.08em }
+    .m  { font:500 10.5px ui-monospace,SFMono-Regular,Menlo,monospace; fill:#82888f }
+    .ma { font:500 10.5px ui-monospace,SFMono-Regular,Menlo,monospace; fill:#e2662a }
+    .ar { fill:none; stroke:#8a8f9a; stroke-width:1.4; marker-end:url(#h) }
+    .ar-a { fill:none; stroke:#e2662a; stroke-width:1.6; marker-end:url(#ha) }
+  </style>
+
+  <text class="lbl" x="20" y="20">TAG FIRST, THEN BUDGET, THEN QUERY</text>
+
+  <!-- 1. the tag -->
+  <rect class="box-a" x="20" y="32" width="196" height="86" rx="10"/>
+  <text class="ta" x="34" y="56">1 · The tag</text>
+  <text class="m" x="34" y="78">team: platform</text>
+  <text class="s" x="34" y="100">on the cluster, the warehouse,</text>
+  <text class="s" x="34" y="114">the job, the serverless budget policy</text>
+
+  <!-- 2. the usage record -->
+  <rect class="box" x="256" y="32" width="236" height="86" rx="10"/>
+  <text class="t" x="270" y="56">2 · The usage record</text>
+  <text class="m" x="270" y="78">system.billing.usage</text>
+  <text class="s" x="270" y="100">one row per DBU, carrying the tags</text>
+  <text class="s" x="270" y="114">the resource had at the time</text>
+  <path class="ar-a" d="M222 75 H250"/>
+
+  <!-- 3a. budgets -->
+  <rect class="box" x="532" y="18" width="348" height="58" rx="10"/>
+  <text class="t" x="546" y="40">3 · A budget watches one slice</text>
+  <text class="s" x="546" y="60">A filter, a monthly threshold, an email when it is crossed.</text>
+  <path class="ar" d="M498 62 H526"/>
+
+  <!-- 3b. the query -->
+  <rect class="box" x="532" y="88" width="348" height="58" rx="10"/>
+  <text class="t" x="546" y="110">3 · A query answers the rest</text>
+  <text class="s" x="546" y="130">The only one that answers a question you did not plan for.</text>
+  <path class="ar" d="M498 92 H526"/>
+
+  <!-- what escapes -->
+  <rect class="zone" x="20" y="150" width="472" height="94" rx="10"/>
+  <text class="ta" x="34" y="172">What escapes the scheme</text>
+  <text class="s" x="34" y="194">Usage from anything that carried no tag at the moment it ran.</text>
+  <text class="s" x="34" y="214">A budget scoped to a tag nobody applies tracks zero, and</text>
+  <text class="s" x="34" y="232">reports nothing wrong while it does it.</text>
+
+  <rect class="box" x="532" y="158" width="348" height="86" rx="10"/>
+  <text class="t" x="546" y="180">Which is why the order matters</text>
+  <text class="s" x="546" y="202">Make the tag compulsory before you rely on the number.</text>
+  <text class="s" x="546" y="222">Untagged spend is not small: it is invisible, which is</text>
+  <text class="s" x="546" y="238">worse.</text>
+</svg>

@@ -65,6 +65,8 @@ This is a governance setting, not a sizing setting. Which _kind_ of compute to u
 
 ### Auto is the default
 
+![What Auto picks: a machine learning runtime, a GPU instance or a runtime below 14.3 makes the cluster Dedicated, and everything else Standard](../../../attachments/compute-auto-mode.svg)
+
 Left alone, the UI sets access mode to **Auto** and picks for you: Standard, unless you selected a machine learning runtime, a GPU instance type, or a Databricks Runtime lower than 14.3, in which case Dedicated. So a cluster can quietly become dedicated because somebody picked an ML runtime, and then a Unity Catalog Python UDF stops working for reasons that look unrelated.
 
 ## Why it exists

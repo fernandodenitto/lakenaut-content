@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" role="img" aria-labelledby="ttl">
+  <title id="ttl">Which MERGE clause fires: matched pairs, source rows with no target, target rows with no source</title>
+  <defs>
+    <marker id="h" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8a8f9a"/>
+    </marker>
+    <marker id="ha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#e2662a"/>
+    </marker>
+  </defs>
+  <style>
+    .box { fill:#8a8f9a; fill-opacity:.06; stroke:#8a8f9a; stroke-width:1.4 }
+    .box-a { fill:#e2662a; fill-opacity:.10; stroke:#e2662a; stroke-width:1.6 }
+    .zone { fill:none; stroke:#8a8f9a; stroke-width:1.2; stroke-dasharray:5 4; opacity:.75 }
+    .t  { font:600 13px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#8f959f }
+    .ta { font:600 13px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#e2662a }
+    .s  { font:400 11px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#82888f }
+    .lbl{ font:600 10px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#82888f; letter-spacing:.08em }
+    .m  { font:500 10.5px ui-monospace,SFMono-Regular,Menlo,monospace; fill:#82888f }
+    .ma { font:500 10.5px ui-monospace,SFMono-Regular,Menlo,monospace; fill:#e2662a }
+    .ar { fill:none; stroke:#8a8f9a; stroke-width:1.4; marker-end:url(#h) }
+    .ar-a { fill:none; stroke:#e2662a; stroke-width:1.6; marker-end:url(#ha) }
+  </style>
+
+  <!-- the two sides -->
+  <text class="lbl" x="20" y="20">SOURCE</text>
+  <rect class="box" x="20" y="30" width="150" height="196" rx="10"/>
+  <text class="m" x="34" y="56">s.id = 1</text>
+  <text class="m" x="34" y="76">s.id = 2</text>
+  <text class="m" x="34" y="96">s.id = 9</text>
+  <text class="s" x="34" y="126">one row per key,</text>
+  <text class="s" x="34" y="142">deduplicated first</text>
+  <text class="s" x="34" y="176">ON t.id = s.id</text>
+  <line x1="34" y1="188" x2="156" y2="188" stroke="#8a8f9a" stroke-width="1" opacity=".5"/>
+  <text class="s" x="34" y="208">decides which lane</text>
+
+  <text class="lbl" x="730" y="20">TARGET · DELTA TABLE</text>
+  <rect class="box" x="730" y="30" width="150" height="196" rx="10"/>
+  <text class="m" x="744" y="56">t.id = 1</text>
+  <text class="m" x="744" y="76">t.id = 2</text>
+  <text class="m" x="744" y="96">t.id = 7</text>
+  <text class="s" x="744" y="126">rows 1 and 2 match,</text>
+  <text class="s" x="744" y="142">row 7 does not</text>
+
+  <!-- lane 1: matched -->
+  <rect class="box" x="250" y="30" width="400" height="56" rx="9"/>
+  <text class="t" x="266" y="52">WHEN MATCHED</text>
+  <text class="s" x="266" y="72">a pair — UPDATE or DELETE, at most one of each</text>
+  <path class="ar" d="M176 60 H244"/>
+  <path class="ar" d="M724 60 H656"/>
+
+  <!-- lane 2: not matched by target -->
+  <rect class="box" x="250" y="100" width="400" height="56" rx="9"/>
+  <text class="t" x="266" y="122">WHEN NOT MATCHED [BY TARGET]</text>
+  <text class="s" x="266" y="142">a source row with no pair — INSERT only</text>
+  <path class="ar" d="M176 120 H244"/>
+
+  <!-- lane 3: not matched by source -->
+  <rect class="box" x="250" y="170" width="400" height="56" rx="9"/>
+  <text class="t" x="266" y="192">WHEN NOT MATCHED BY SOURCE</text>
+  <text class="s" x="266" y="212">a target row with no pair — target columns only</text>
+  <path class="ar" d="M724 200 H656"/>
+
+  <!-- the commit -->
+  <rect class="box-a" x="250" y="248" width="400" height="38" rx="9"/>
+  <text class="ta" x="450" y="266" text-anchor="middle">One atomic commit</text>
+  <text class="ma" x="450" y="280" text-anchor="middle">all clauses, or none</text>
+  <path class="ar-a" d="M450 230 V244"/>
+
+  <!-- the rule that bites -->
+  <rect class="zone" x="20" y="240" width="210" height="46" rx="9"/>
+  <text class="s" x="34" y="260">Two source rows for one</text>
+  <text class="s" x="34" y="276">target row: the merge fails.</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280" role="img" aria-labelledby="ttl">
+  <title id="ttl">OpenSharing: a share and a recipient on your side, a provider on theirs, and the data never leaving your storage</title>
+  <defs>
+    <marker id="h" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8a8f9a"/>
+    </marker>
+    <marker id="ha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#e2662a"/>
+    </marker>
+  </defs>
+  <style>
+    .box { fill:#8a8f9a; fill-opacity:.06; stroke:#8a8f9a; stroke-width:1.4 }
+    .box-a { fill:#e2662a; fill-opacity:.10; stroke:#e2662a; stroke-width:1.6 }
+    .zone { fill:none; stroke:#8a8f9a; stroke-width:1.2; stroke-dasharray:5 4; opacity:.75 }
+    .t  { font:600 13px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#8f959f }
+    .ta { font:600 13px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#e2662a }
+    .s  { font:400 11px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#82888f }
+    .lbl{ font:600 10px ui-sans-serif,system-ui,-apple-system,sans-serif; fill:#82888f; letter-spacing:.08em }
+    .m  { font:500 10.5px ui-monospace,SFMono-Regular,Menlo,monospace; fill:#82888f }
+    .ma { font:500 10.5px ui-monospace,SFMono-Regular,Menlo,monospace; fill:#e2662a }
+    .ar { fill:none; stroke:#8a8f9a; stroke-width:1.4; marker-end:url(#h) }
+    .ar-a { fill:none; stroke:#e2662a; stroke-width:1.6; marker-end:url(#ha) }
+  </style>
+
+  <!-- provider side -->
+  <rect class="zone" x="16" y="26" width="420" height="196" rx="12"/>
+  <text class="lbl" x="32" y="48">YOUR ACCOUNT · THE ONE THAT HOLDS THE DATA</text>
+
+  <rect class="box" x="34" y="62" width="170" height="62" rx="9"/>
+  <text class="t" x="48" y="86">Tables and volumes</text>
+  <text class="s" x="48" y="108">in your own storage</text>
+
+  <rect class="box-a" x="234" y="62" width="184" height="62" rx="9"/>
+  <text class="ta" x="248" y="86">SHARE</text>
+  <text class="s" x="248" y="108">the curated bundle</text>
+  <path class="ar" d="M210 93 H228"/>
+
+  <rect class="box-a" x="234" y="142" width="184" height="62" rx="9"/>
+  <text class="ta" x="248" y="166">RECIPIENT</text>
+  <text class="s" x="248" y="188">who you are sharing with</text>
+  <path class="ar-a" d="M326 130 V136"/>
+
+  <!-- recipient side -->
+  <rect class="zone" x="480" y="26" width="404" height="196" rx="12"/>
+  <text class="lbl" x="496" y="48">THEIR ACCOUNT</text>
+
+  <rect class="box-a" x="498" y="62" width="184" height="62" rx="9"/>
+  <text class="ta" x="512" y="86">PROVIDER</text>
+  <text class="s" x="512" y="108">you, as they see you</text>
+
+  <rect class="box" x="712" y="62" width="156" height="62" rx="9"/>
+  <text class="t" x="726" y="86">A catalog</text>
+  <text class="s" x="726" y="108">they read from</text>
+  <path class="ar" d="M688 93 H706"/>
+
+  <text class="s" x="498" y="160">They query it. Every query reaches</text>
+  <text class="s" x="498" y="178">back into your storage, live.</text>
+  <text class="s" x="498" y="196">Nothing is copied to their side.</text>
+
+  <!-- the link -->
+  <path class="ar-a" d="M424 93 H492"/>
+  <text class="ma" x="458" y="84" text-anchor="middle">token</text>
+
+  <!-- the rule -->
+  <rect class="zone" x="16" y="238" width="868" height="30" rx="9"/>
+  <text class="s" x="32" y="258">One share can go to many recipients, and one recipient can hold many shares. Revoking the recipient ends the access at once, everywhere.</text>
+</svg>
